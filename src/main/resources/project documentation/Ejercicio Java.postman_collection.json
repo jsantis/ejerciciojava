@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "ab0aff8e-295a-4bf5-96a9-f1bfe3381d65",
+		"name": "Ejercicio Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ejercicio/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ejercicio",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"Juan Rodriguez\",\r\n\"email\": \"tooestedee4@test.cl\",\r\n\"password\": \"Agdd5\",\r\n\"phones\": [\r\n{\r\n\"number\": \"1234567\",\r\n\"citycode\": \"1\",\r\n\"contrycode\": \"57\"\r\n}\r\n]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ejercicio/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ejercicio",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
